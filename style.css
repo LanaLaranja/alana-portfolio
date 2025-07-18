@@ -133,47 +133,19 @@ header {
     width: 100%;
 }
 
-.home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
+
+.image {
+  width: 600px;        /* Set the size of the image container */
+  margin: 20px auto;   /* Center it horizontally */
+  border-radius: 360px; /* Rounded corners */
+  overflow: hidden;    /* Hides overflow if image is bigger */
+ 
+  text-align: center;
 }
 
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #D9A299;
-    border-radius: 50%;
-    font-size: 20px;
-    color: #D9A299;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
+.image img {
+  width: 100%;         /* Make the image fill the container */
+  height: auto;        /* Maintain aspect ratio */
+  display: block;
 }
 
-.home-sci a:hover {
-    color: #F0E4D3;
-}
-
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #D9A299;
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover::before {
-    width: 100%;
-}
